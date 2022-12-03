@@ -1,13 +1,45 @@
-# A Different Song: How Online Music Streaming is Affecting the Popularity of Record Labels
-Master Marketing Analytics Thesis by Henk-Jan Klijsen
+# spotify-song-popularity
 
-## Introduction
-The recorded music industry had to deal with disruptive innovations in the last few decades, which caused new opportunities and challenges. These changes started in the late 1990s with the introduction of MP3 technology and have since included free music file sharing (such as Napster), legal downloading through services like iTunes and others, a move to buying singles instead of entire albums, and most recently, online music streaming through services like Spotify, Tidal, and Apple Music. The changes have reduced industry income since companies can no longer capture value in conventional methods, such as selling complete physical music CDs. Since the introduction of Napster in 1999, recorded music revenue has dropped by more than half, making it harder for record labels to support new music releases through traditional high-cost approaches of production, distribution, and promotion: pressing pieces onto physical media, transporting records to retail locations, and promoting new music on the radio. However, digitalization in the music business has also enabled new, lower-cost methods for music industry activity (Aguiar & Waldfogel, 2015).
+> Henk-Jan Klijsen, 2022, "A Different Song: How Online Music Streaming is Affecting the Popularity of Record Labels", Tilburg University Thesis.
 
-The recorded music industry has traditionally been divided into two categories of organizations with opposing strategic positions in the market: ‘major’ record labels owned by a small number of media companies (Sony, Universal, Warner) and a vast number of ‘independent’ labels. Major record labels specialize in providing music that appeals to significant populations of people. Major record labels have used traditional high-cost, high-promotion tactics to commercialize music releases with broad predicted market appeal and high-income potential. The major record labels have controlled the industry and have released goods that account for the most significant proportion of industry income. On the other hand, independent record labels hold a different strategic position. These labels take lower-cost strategies, such as skipping radio broadcasts, allowing them to produce items that are intended to appeal to smaller, niche groups of customers. While independent record labels release significantly more albums than major record labels, independent record label releases contribute a modest portion of industry revenue (about 10%-15%) (Benner & Waldfogel, 2016).
 
-Even though economists have only recently started to study technological change and digitization in the music industry, such research has not looked at questions at the organizational level, such as the strategic implications for businesses dealing with these technological changes (Aguiar & Waldfogel, 2015; Liebowitz, 2006, 2016; Smith & Telang, 2010; Zentner, 2006). Therefore, it is crucial to study how online music streaming affects the strategic implications for businesses dealing with these technological changes.
+## Dependencies
 
-This study investigates how these two types of record labels, which had varying positions and resources before online music streaming developments, reacted to the recorded music industry changes. This study asks how the availability of online music streaming caused different effects on shifting popularity for major and independent record labels. This study depends on a unique dataset of many new music releases in the United States between 2010 and 2012. The statistics cover record labels’ and artists’ music releases, as well as the following performance of these releases as judged by the Billboard top charts. This study analyzes the extent to which major or independent record labels are occurring more often in the chart and how this evolves before and after the availability of online music streaming, which is relevant for the whole recorded music industry.
+Please follow the installation guide on http://tilburgsciencehub.com/.
 
-Positioning is a central topic in strategy studies (Gartner, 1985). Previous studies provide insights into firms’ different positions, products, and market space. There is one prior research about the considerable changes in the recorded music industry, such as changing business models (Benner & Waldfogel, 2016). This study will add to this previous study by giving the different positioning of varying record labels after the availability of online music streaming in the recorded music industry. This study also provides methodological contributions, because previous studies explore technological changes but not causal attribution (Benner, 2010; Henderson & Clark, 1990; Tripsas, 1997; Tushman & Anderson, 1986). This study’s design with the difference-in-difference analysis will provide this causal attribution to the arrival of streaming services in the recorded music industry.
+- Python. [Installation Guide](http://tilburgsciencehub.com/setup/python/).
+- R. [Installation Guide](http://tilburgsciencehub.com/setup/r/).
+
+
+## How to run it
+
+Open your command line tool:
+
+- Check whether your present working directory is  `spotify-song-popularity` by typing `pwd` in terminal
+
+  - if not, type `cd yourpath/spotify-song-popularity` to change your directory to `spotify-song-popularity`
+
+- Type `make` in the command line.
+
+## Directory Structure
+
+```txt
+├── data
+├── gen
+│   ├── analysis
+│   │   ├── input
+│   │   ├── output
+│   │   └── temp
+│   ├── data-preparation
+│   │   ├── input
+│   │   ├── output
+│   │   └── temp
+│   └── paper
+│       ├── input
+│       ├── output
+│       └── temp
+└── src
+    ├── analysis
+    ├── data-preparation
+    └── paper
+```
